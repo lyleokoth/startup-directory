@@ -23,18 +23,18 @@
 
 					<ul class="list-unstyled components mb-5">
 						<li class="active">
-						  <a href="#">Dashboard</a>
+						  <a href="{{ url_for( 'dashboard_page') }}">Dashboard</a>
 						</li>
 						<li>
-							<a href="#">Startups</a>
+							<a href="{{ url_for( 'startups_page') }}">Startups</a>
 						</li>
 						<li>
-							<a href="#">Investors</a>
+							<a href="{{ url_for( 'investor_page') }}">Investors</a>
 						</li>
 						<li>
-							<a href="#">Hubs</a>
+							<a href="{{ url_for( 'business_hubs_page') }}">Hubs</a>
 						</li>
-					  </ul>
+					  </ul> 
 
 					<div class="mb-5">
 								<h3 class="h6">Subscribe for newsletter</h3>
@@ -84,9 +84,9 @@
 			<thead class="thead-dark">
 			  <tr>
 				<th scope="col">#</th>
-				<th scope="col">First</th>
-				<th scope="col">Last</th>
-				<th scope="col">Handle</th>
+				<th scope="col">Name</th>
+				<th scope="col">Description</th>
+				<th scope="col">Website</th>
 			  </tr>
 			</thead>
 			<tbody>
